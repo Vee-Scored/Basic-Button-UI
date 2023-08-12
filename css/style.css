@@ -97,3 +97,18 @@ h6 {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+.btn-icon {
+  padding: 0;
+  width: 38.67px;
+  height: 38.67px;
+  
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.btn-pill {
+  border-radius: 20px;
+}
