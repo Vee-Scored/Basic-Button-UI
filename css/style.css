@@ -6,6 +6,8 @@
   font-family: "Roboto Condensed", "Padauk", sans-serif;
   padding: 0;
   margin: 0;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 :root {
@@ -97,6 +99,7 @@ h6 {
   border-radius: 10px;
   margin: 10px auto;
   max-width: 600px;
+  
 }
 
 .btn-icon {
@@ -174,4 +177,102 @@ th {
   .table-strip tr {
     background-color: none;
   }
+}
+
+/* start of style for list */
+
+.list {
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+.list li {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.simple-list li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.simple-list li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.simple-list li:nth-child(even) {
+  background-color: gray;
+  color: white;
+}
+
+.list li:hover {
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
+
+.nav-list li {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+}
+
+.nav-list li:hover {
+  border-bottom: 2px solid black;
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width:540px ) {
+  .nav-list li {
+    display: block;
+
+  }
+}
+
+/* start of style for card */
+
+.card {
+  width: 300px;
+  border: 1px solid gray;
+
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.product-title {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.price span {
+  font-size: 25px;
+}
+
+.product-rating {
+  color: rgb(211, 185, 35);
+}
+
+.card-body p {
+  text-align: justify;
+  margin: 10px 0;
+  
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
 }
